@@ -78,8 +78,8 @@ public class ItemBuilder implements ItemSpecification<ItemBuilder>{
     }
 
     @Override
-    public ItemBuilder hideFlags() {
-        itemMeta.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
+    public ItemBuilder hideFlag(ItemFlag itemFlag) {
+        itemMeta.addItemFlags(itemFlag);
         return this;
     }
 
