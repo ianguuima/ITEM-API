@@ -5,7 +5,7 @@ Uma api para criar diferentes tipos de itens.
 Há dois tipos de itens nessa API: Itens e Skulls.
 
 
-###Criando Itens
+### Criando Itens
   Para criar  itens, você precisará instanciar o `ItemBuilder`
   
   Aqui temos um exemplo de criação de item comum.
@@ -20,7 +20,7 @@ Há dois tipos de itens nessa API: Itens e Skulls.
    .build();
   ```
 
-###Criando Skulls (Cabeças)
+### Criando Skulls (Cabeças)
 
 Para criar cabeças, você precisará instanciar o `SkullBuilder`
 
