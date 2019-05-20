@@ -5,7 +5,7 @@ import org.bukkit.inventory.ItemStack;
 
 import java.util.List;
 
-public interface ItemSpecification<T> {
+public interface ItemSpecification<T extends ItemBuilder> {
 
     public T setDisplayName(String name);
 
