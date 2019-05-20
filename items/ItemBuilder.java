@@ -71,11 +71,13 @@ public class ItemBuilder implements ItemSpecification<ItemBuilder>{
         return this;
     }
 
+
     @Override
-    public ItemBuilder hideEnchants() {
-        itemMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
+    public ItemBuilder hideAllFlags() {
+        itemMeta.addItemFlags(ItemFlag.values());
         return this;
     }
+
 
     @Override
     public ItemBuilder hideFlag(ItemFlag itemFlag) {
