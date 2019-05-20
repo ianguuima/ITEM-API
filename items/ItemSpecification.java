@@ -11,6 +11,8 @@ public interface ItemSpecification<T> {
 
     public T setLore(List<String> lore);
 
+    public T setLore(String... lore);
+
     public T unbreakable();
 
     public T addEnchantment(Enchantment enchantment, int strength);

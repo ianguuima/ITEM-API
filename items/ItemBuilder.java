@@ -6,6 +6,7 @@ import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -49,6 +50,13 @@ public class ItemBuilder implements ItemSpecification<ItemBuilder>{
     public ItemBuilder setLore(List<String> lore) {
         itemMeta.setLore(lore.stream().map(x -> x.replace("&", "§")).collect(Collectors.toList()));
         return this;
+    }
+
+    @Override
+    public ItemBuilder setLore(String... lore) {
+        List<String> list = Arrays.asList(lore);
+        itemMeta.setLore(list.stream().map(x -> x.replace("&", "§")).collect(Collectors.toList()));
+        return null;
     }
 
     @Override
