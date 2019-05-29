@@ -56,7 +56,7 @@ public class ItemBuilder implements ItemSpecification<ItemBuilder>{
     public ItemBuilder setLore(String... lore) {
         List<String> list = Arrays.asList(lore);
         itemMeta.setLore(list.stream().map(x -> x.replace("&", "§")).collect(Collectors.toList()));
-        return null;
+        return this;
     }
 
     @Override
